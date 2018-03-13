@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Permitted Use Lookup</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:bold,black,regular,light');
+  </style>
+
+  <!-- Js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://js.arcgis.com/4.6/"></script>
+  <script src="map.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="uses.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <br>
+      <h1>Permitted Use Lookup</h1>
+      <h5>Select a zoning category from the table below to view the associated uses.</h5>
+    </header>
+    <br>
+    <div class="row">
+      <div class="col-md-6" style="background-color:none;">
+        <div class="box-title">
+          <h3>SELECT A ZONING</h3>
+        </div>
+        <p>View the Zoning Map in <a id="exploreStonecrest" href="https://stonecrestga.maps.arcgis.com/apps/MapSeries/index.html?appid=a2541fc698b64334a63f4cf36f4aefa0&entry=3" target="_blank">Explore Stonecrest</a></p>
+        <div class="zTable">
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <td class="zTable-item" data-id="7">RE</td>
+                <td class="zTable-item" data-id="6">R-100</td>
+                <td class="zTable-item" data-id="5">R-85</td>
+              </tr>
+              <tr>
+                <td class="zTable-item" data-id="4">R-75</td>
+                <td class="zTable-item" data-id="3">R-60</td>
+                <td class="zTable-item" data-id="2">RSM</td>
+              </tr>
+              <tr>
+                <td class="zTable-item" data-id="1">MR-1</td>
+                <td class="zTable-item" data-id="0">MR-2</td>
+                <td class="zTable-item" data-id="16">NS</td>
+              </tr>
+              <tr>
+                <td class="zTable-item" data-id="12">OI</td>
+                <td class="zTable-item" data-id="13">OIT</td>
+                <td class="zTable-item" data-id="11">OD</td>
+              </tr>
+              <tr>
+                <td class="zTable-item" data-id="15">C-1</td>
+                <td class="zTable-item" data-id="14">C-2</td>
+                <td class="zTable-item" data-id="8">MU-4</td>
+              </tr>
+              <tr>
+                <td class="zTable-item" data-id="10">M</td>
+                <td class="zTable-item" data-id="9">M-2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-6" style="background-color:none;">
+        <div id="viewDiv"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box-title">
+          <h3>PERMITED USES</h3>
+        </div>
+        <p>Permitted uses for selected Zoning</p>
+        <div class="sublayers">
+          <table id="table" class="table table-bordered">
+            <thead>
+              <tr>
+                <th class="perm-use">PERMITTED USE</th>
+                <th class="perm-use">PERMITTED AS ACCESSORY USE</th>
+                <th class="perm-use">SPECIAL ADMIN PERMIT</th>
+                <th class="perm-use">SPECIAL LAND USE PERMIT</th>
+              </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer class="fixed-bottom">
+      Built by <a href='https://www.interdev.com/mapping/geographic-information-systems-gis/'>InterDev GIS</a>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+h1 {
+  font-family: 'Source Sans Pro Black', sans-serif;
+  color: white;
+  font-size: 48px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: light;
+  color: #f0f0f0;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+a {
+  font-weight: bold;
+  color: #ffff00;
+}
+
+a:hover {
+  font-weight: bold;
+  color: #000;
+  background-color: yellow;
+  text-decoration: none;
+}
+
+#exploreStonecrest {
+  font-weight: bold;
+  color: #000;
+}
+
+#exploreStonecrest:hover {
+  font-weight: bold;
+  color: #000;
+  background-color: yellow;
+  text-decoration: none;
+}
+
+s html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  height: 25%;
+  width: 100%;
+}
+
+header {
+  padding-left: 15px;
+  padding-bottom: 5px;
+  background-color: #000;
+  border-style: none solid solid;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  height: 20px;
+  padding-top: 2px;
+  color: white;
+  background-color: #000;
+  font-size: 12px;
+}
+
+table.table-bordered>thead>tr>th {
+  border: 2px solid #000;
+}
+
+table.table-bordered>tbody>tr>td {
+  border: 2px solid #000;
+}
+
+#viewDiv {
+  position: relative;
+  right: 0;
+  left: 0;
+  top: 30px;
+  bottom: 10px;
+  height: calc(100% - 40px);
+}
+
+.zTable {
+  margin: 10px auto;
+}
+
+.zTable-item {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+  font-weight: lighter;
+  width: 25%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.perm-use {
+  width: 25%;
+  padding: 20px;
+  color: black;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.visible-layer {
+  color: #000;
+  background-color: #FFFF33;
+}
+
+.row {
+  height: 100%;
+}
+
+.box-title {
+  margin-top: 25px;
+  height: 25px;
+}
