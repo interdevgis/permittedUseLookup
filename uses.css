@@ -90,6 +90,10 @@ table.table-bordered>tbody>tr>td {
   height: calc(100% - 40px);
 }
 
+#table {
+  margin-bottom: 25px;
+}
+
 .zTable {
   margin: 10px auto;
 }
